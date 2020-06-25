@@ -1,8 +1,10 @@
 *, *::before, *::after{
     box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*font-family: 'Playfair Display', serif;*/
+    font-family: 'Dosis', sans-serif;
+    /*font-family: 'Pacifico', cursive;*/
 }
-
+    
 :root {
     --hue-neutral: 187;
     --hue-wrong: 0;
