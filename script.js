@@ -41,8 +41,8 @@ NoQuestBtn.addEventListener("click", function(event){
             j++;
         }
         questions[i] = (j + 1);
-        answers[i] = "x, y = " + x[j] + ", " + y[j];
-        fauxAns[i] = "x, y = " + Math.floor(Math.random() * x[j] + 1) + ", " + Math.floor(Math.random() * y[j] + 1);
+        answers[i] = "x, y  =  " + x[j] + ", " + y[j];
+        fauxAns[i] = "x, y  =  " + Math.floor(Math.random() * x[j] + 1) + ", " + Math.floor(Math.random() * y[j] + 1);
         j++;
         console.log(questions);
         console.log(answers);
