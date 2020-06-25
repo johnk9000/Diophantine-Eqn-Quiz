@@ -49,8 +49,32 @@ NoQuestBtn.addEventListener("click", function(event){
         
         
     }
+    
 }
 })
+
+function shuffle(vect) {
+    for(let i = vect.length - 1; i > 0; i--){
+        var j = Math.floor(Math.random() * i);
+        var entry = vect[i];
+        vect[i] = vect[j];
+        vect[j] = entry;
+    }
+}
+
+function shuffleOn() {
+    for(let i = questions.length - 1; i > 0; i--){
+        var j = Math.floor(Math.random() * i);
+
+        var entry = questions[i];
+        questions[i] = questions[j];
+        questions[j] = entry;
+
+        var entryAns = answers[i];
+        answers[i] = answers[j];
+        answers[j] = entryAns;
+    }
+}
 
 function startFcn() {
     console.log("Quiz has begun");
@@ -63,6 +87,7 @@ function startFcn() {
     questContEl.classList.remove("hide");
     results.classList.add('hide');
 
+    shuffleOn();
     nxtQuest();
 }
 
