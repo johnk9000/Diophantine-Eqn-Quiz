@@ -193,3 +193,38 @@ p {
     font-size: 64px;
     color: #666;
 }
+
+@media screen and (max-width: 640px) {
+
+
+    .container {
+        max-width: 96%;
+    }
+    
+    .btn {
+        min-width: auto;
+    }
+
+    .btn-OffRd {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        gap: 10px;
+        margin: 10px 0;
+        margin-bottom: 60px;
+    }
+
+    #question {
+        text-align: justify;
+        margin-bottom: 60px;
+        font-size: 36px;
+        color: hsl(var(--hue), 50%, 15%)
+    }
+
+    #static-question {
+        font-size: 36px;
+        color: #666;
+    }
+
+    
+
+}
