@@ -1,0 +1,315 @@
+Arterial Blood Gases
+
+Angohuman Converting Enzyme
+
+Activated Coagulation Time
+
+Adrenocorticotropic Hormone
+
+Albumin-to-Globulin Ratio
+
+(SGOT) Atenine Aminotransferase
+
+Acute Myocardial Interaction
+
+Absolute Neutrophil Count
+
+Adult Respiratory Distress Syndrome
+
+(SGOT) Aspartane Aminotransferase
+
+Area Under the Curve
+
+Atrioventricular
+
+Bone Mass Density
+
+Body Surface Area
+
+Blood Urea Nitrogen
+
+Calcium
+
+coronary artery bypass graft
+
+coronary artery disease
+
+continuous ambulatory peritoneal dialysis
+
+comp blood cell count
+
+Clostridium difficile - associated diarrhea
+
+congestive heart tail
+
+Chloride
+
+central nervous system
+
+carbon dioxide
+
+chronic obstructive pulmonary disease
+
+creatine-kinase
+
+Creatinine clearance
+
+chronic renal talure
+
+controlled room temperature 20 to 256877 FD
+
+cerebrospinal fluid
+
+culture and son
+
+Common Terminology Criteria for Adverse Events
+
+10% dextrose in normal saine
+
+5% dextrose in water
+
+5% dextrose in Ringer solution
+
+5% dextrose in Normal Saline
+
+5% dextrose in water
+
+Discontinued
+
+detyheryphthalate
+
+disseminated intravascular Coagulation
+
+deciliter(s) (100 mL)
+
+delicient mismatch repair
+
+Deoxyribonucleaicacid
+
+electrocardiogram
+
+electroencephalogram
+
+estimated glomerular filtration rate
+
+end-stage-renal-disease
+
+follicle-stimulating hormones
+
+gastrointestinal
+
+glamour rationale
+
+gamma glutamine
+
+grams)
+
+grain(s)
+
+genitourinary
+
+hemoglobin
+
+hamatocrit
+
+hepatitis C virus
+
+mercury
+
+human immunodeficiency virus
+
+hour
+
+heart rate
+
+hematopoietic stem cell transplant
+
+ideal body weight
+
+intensive and unit
+
+immunoglobulin A
+
+immune globulin intravenous
+
+microlens, L. mm!
+
+intramuscular
+
+International Normalized Ratio
+
+intrapleural
+
+international units)
+
+intravenous
+
+intravenous immune globulin
+
+potassium
+
+potassium chloride
+
+kilograms
+
+pounds
+
+lactic dehydrogenase
+
+liver function test
+
+luteinizing hormone
+
+lactated Ringer's injection or solution
+
+molar
+
+meter squared
+
+monoamine oxidase
+
+mean arterial pressure
+
+microgram(s)
+
+millicurie(s)
+
+milliequivalent
+
+magnesium
+
+milligram(s)
+
+myocardial infarction
+
+minute
+
+milliliter
+
+millimole(s)
+
+cubic millimeters
+
+multidrug-resistant Streptococcus pneumoniae
+
+magnetic resonance imaging
+
+microsatellite instability High
+
+sodium
+
+sodium chloride
+
+National Cancer Institute, see CTCAE
+
+Ranogram (millimicrogram)
+
+normal saline (0.9%)
+
+nonsteroidal anti-inflammatory drug
+
+non-small-cell lung cancer
+
+normal sinus rhythm
+
+nausea and vomiting
+
+over-the-counter
+
+premature atrial contraction
+
+arterial oxygen pressure
+
+patient-controlled analgesia
+
+Pneumocystis jiroveci pneumonia
+
+picogram
+
+hydrogen ion concentration
+
+progressive multifocal leukoencephalopathy 
+
+by mouth orally
+
+pure red cell aplasia
+
+posterior reversible encephalopathy syndrome
+
+paroxysmal supraventricular tachycardia
+
+prothrombin time
+
+partial thromboplastin time
+
+polyvinyl chloride: premature ventricular contraction
+
+Ringers injection or solution
+
+red blood cell
+
+temperature at 2 to 8 C (36 to 46 F)
+
+ribonucleic acid
+
+reversible posterior leukoencephalopathy syndrome
+
+room temperature
+
+room-temperature stable
+
+sinoatrial
+
+subcutaneous
+
+syndrome of inappropriate antidiuresis hormone
+
+shortness of breath
+
+serum creatinine
+
+signs and symptoms
+
+sterile water for Injection
+
+toxic epidermal necrolysis
+
+transient ischemic attacks
+
+tumor lysis syndrome
+
+3 in-1 combination of amino acids, glucose, and fat emulsion
+
+2-in-1 combination of amino acids, glucose; total parenteral nutrition
+
+transfusion-related acute lung injury
+
+thyroid-stimulating hormone
+
+thrombin time
+
+microliters, mm2
+
+upper limits of normal
+
+upper respiratory infection
+
+urinary tract infection
+
+vascular endothelial growth factor
+
+ventricular fibrillation
+
+vital signs
+
+ventricular tachycardia
+
+volume-to-volume ratio
+
+white blood cell
+
+whole blood clotting time
+
+weight-to-volume ratio
+
+weight-to-weight ratio
