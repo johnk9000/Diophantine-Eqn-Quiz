@@ -45,11 +45,8 @@ NoQuestBtn.addEventListener("click", function(event){
         fauxAns[i] = "x, y  =  " + Math.floor(Math.random() * x[j] + 1) + ", " + Math.floor(Math.random() * y[j] + 1);
         j++;
         console.log(questions);
-        console.log(answers);
-        
-        
-    }
-    
+        console.log(answers);   
+    }  
 }
 })
 
@@ -140,11 +137,12 @@ function popAnsChoice() {
         ansChoice[j] = entry;
     }
     // Use doc select to grab elements and include text content
-    ansChoice.forEach(ansChoice => {
+    ansChoice.forEach(ans => {
         var button = document.createElement("button");
-        button.innerText = ansChoice;
+        button.innerText = ans;
         button.classList.add("btn");
-        if(ansChoice == answers[page]){
+        button.setAttribute("style", "--animation-order:" + ansChoice.indexOf(ans));
+        if(ans == answers[page]){
             console.log("-right answer-");
             button.dataset.type = true;
         } else {
@@ -152,7 +150,7 @@ function popAnsChoice() {
             button.dataset.type = false;
         }
         button.addEventListener("click", selectAns);
-        ansBtns.appendChild(button);
+        setTimeout(ansBtns.appendChild(button), 420 * ansChoice.indexOf(ans));
     })
 
 }
@@ -301,8 +299,3 @@ nxtBtn.addEventListener("click", function(){
     nxtQuest();
     }
 });
-
-
-
-
-

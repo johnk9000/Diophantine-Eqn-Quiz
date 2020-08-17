@@ -11,18 +11,19 @@
             MathJax.Hub.Queue(["Text", math, s]);
         }
      </script>
-    <title>Quiz-beta</title>
+    <title>Diaphantine Quiz-beta</title>
     
 </head>
 <body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
    <div class="container">
        <div id ="preamble">
-           <h1>Welcome to Quizzle!</h1>
-           <p>Here you will be solving the diaphantine equation. Good Luck.</p>
-           <p>x<sup>2</sup> - ny<sup>2</sup> = 1</p>
+           <h1 id="frameOne" style="--animation-order: 1">Diaphantine Geometry</h1>
+           <p id="frameTwo" style="--animation-order: 2">Here you will be solving the 1st order diaphantine equation: </p>
+           <p id="frameThree" style="--animation-order: 3">x<sup>2</sup>  -  n &#183 y<sup>2</sup> = 1</p>
+           <p id="frameFour" style="--animation-order: 4"> where n is any positive whole number</p>
            <br>
-           <form>
+           <form id="noQuest" style="--animation-order: 5">
                <h3>Number of Questions: </h3>
             <input placeholder="1-100" id="QNo" />
             <button id="add-btn">Go</button>
@@ -36,10 +37,10 @@
             <div id="questcont" class ="hide row">
                 <div id="static-question">x<sup>2</sup> - <span id="question">Question</span>y<sup>2</sup>  =  1</div>
                 <div id ="ans-btns" class = "btn-OffRd">
-                    <button class="btn" id="ansBtn">ANSi</button>
-                    <button class="btn" id="ansBtn">ANSi</button>
-                    <button class="btn" id="ansBtn">ANSi</button>
-                    <button class="btn" id="ansBtn">ANSi</button>
+                    <button class="btn" id="ansBtn" style="--animation-order: 1">ANSi</button>
+                    <button class="btn" id="ansBtn" style="--animation-order: 2">ANSi</button>
+                    <button class="btn" id="ansBtn" style="--animation-order: 3">ANSi</button>
+                    <button class="btn" id="ansBtn" style="--animation-order: 4">ANSi</button>
                 </div>
             </div>
     </div>
