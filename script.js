@@ -20,11 +20,11 @@ var x = ["-","3","2","-","9","5","8","3","-","19","10","7","649","15","4","-","3
 var y = ["-","2","1","-","4","2","3","1","-","6","3","2","180","4","1","-","8","4","39","2","12","42","5","1","-","10","5","24","1820","2","273","3","y","4","6","1","-","12","6","4","3","320","2","531","30","24","3588","7","1","-","14","7","90","9100","66","12","2","20","2574","69","4","226153980","8","1","-","y","16","8","5967","4","936","30","413","2","267000","430","3","6630","40","6","9","1","-","18","9","6","30996","1122","3","21","53000","2","165","120","1260","221064","4","5","y","6377352","10","1","-","20","10","22419","5","4","3115890","93","130","15140424455100","2","28","12","113296","96","105","910","60","28254","11","1","-","22","11","414960","83204","40","419775","51"];
 
 var NumberofQuests = document.querySelector('#QNo');
-var NoQuestBtn = document.querySelector('#add-btn');
+var NoQform = document.querySelector('#noQuest')
 
-NoQuestBtn.addEventListener("click", function(event){
+NoQform.addEventListener("submit", function(event){
     event.preventDefault();
-  if(event.target.matches("button")) {
+  if(true === true) {
     startBtn.classList.remove('grey-out');
     console.log("gone");
     var num = NumberofQuests.value;
@@ -150,7 +150,7 @@ function popAnsChoice() {
             button.dataset.type = false;
         }
         button.addEventListener("click", selectAns);
-        setTimeout(ansBtns.appendChild(button), 420 * ansChoice.indexOf(ans));
+        setTimeout(ansBtns.appendChild(button), 420);
     })
 
 }

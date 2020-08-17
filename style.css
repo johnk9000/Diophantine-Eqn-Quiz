@@ -191,6 +191,20 @@ p {
     color: hsl(var(--hue), 50%, 15%)
 }
 
+#noQuest {
+    justify-content: center;
+}
+
+#QNo {
+    height: 120px;
+    width: 120px;
+    font-size: 64px;
+    padding: auto;
+    border: 2px solid white;
+    border-radius: 10px;
+    text-align: center;
+}
+
 #static-question {
     font-size: 64px;
     color: #666;
