@@ -22,34 +22,6 @@ const questions = questStr.split("\n\n")
 var NumberofQuests = document.querySelector('#QNo');
 var NoQuestBtn = document.querySelector('#add-btn');
 
-// NoQuestBtn.addEventListener("click", function(event){
-//     event.preventDefault();
-//   if(event.target.matches("button")) {
-//     startBtn.classList.remove('grey-out');
-//     console.log("gone");
-//     var num = questions.length;
-//     num = parseInt(num);
-//         console.log("No. of Q's: " + num);
-//     if( num < 1 || num > 100){
-//         alert("invalid-input");
-//         num = 5;
-//     }
-//     let j = 0;
-//     for (let i = 0; i < num; i++) {
-//         var entry = answers[j];
-//         if( entry == "-") {
-//             j++;
-//         }
-//         questions[i] = (j + 1);
-//         answers[i] = answers[j];
-//         fauxAns[i] = answers[Math.floor(Math.random() * answers.length)];
-//         j++;
-//         console.log("question:",questions);
-//         console.log("answers:",answers);       
-//     }   
-// }
-// })
-
 function shuffle(vect) {
     for(let i = vect.length - 1; i > 0; i--){
         var j = Math.floor(Math.random() * i);
