@@ -13,45 +13,42 @@ var secondsDisplay = document.querySelector("#seconds");
 var restart = document.querySelector(".game-over")
 var clock = document.querySelector(".timer");
 var ansChoice = [];
-const ansStr = "ABGs\n\nACE\n\nACT\n\nACTH\n\nAG\n\nALT\n\nAMI\n\nANC\n\nARDS\n\nAST\n\nAUC\n\nAV\n\nBMO\n\nBSA\n\nBUN\n\nCa\n\nCABG\n\nCAD\n\nCAPD\n\nCBC\n\nCDAD\n\nCHF\n\nCl\n\nCNS\n\nCO2\n\nCOPO\n\nCPK\n\nСrCl\n\nCRF\n\nCRT\n\nCSF\n\nCS\n\nCTCAE\n\nD10NS\n\nD5W\n\nD5LR\n\nD5N5\n\nD5W\n\nDC\n\nDEHP\n\nDIC\n\ndL\n\ndMMR\n\nDNA\n\nECG\n\nEEG\n\neGFR\n\nESRD\n\nFSH\n\nGI\n\nGFR\n\nGGT\n\nGm\n\ngr\n\nGU\n\nHb\n\nHct\n\nHCV\n\nHg\n\nHIV\n\nhr\n\nHR\n\nHSCT\n\nIBW\n\nICU\n\nIgA\n\nIGIV\n\nIL\n\nIM\n\nINR\n\nIP\n\nIU\n\nIV\n\nIVIG\n\nK\n\nKCI\n\nkg\n\nlb\n\nLDH\n\nLFT\n\nLH\n\nLR\n\nM\n\nM^2\n\nMAO\n\nMAP\n\nmcg\n\nmCi\n\nmEq\n\nMg\n\nmg\n\nMI\n\nmin\n\nml\n\nmmol\n\nmm^3\n\nMDRSP\n\nMRI\n\nMSI-H\n\nNa\n\nNaCi\n\nNCI\n\nng\n\nNS\n\nNSAID\n\nNSCLC\n\nNSR\n\nNV\n\nOTC\n\nPAC\n\nPao2\n\nPCA\n\nPCP\n\npg\n\npH\n\nPML\n\nPO\n\nPRCA\n\nPRES\n\nPSVT\n\nPT\n\nPTT\n\nPVC\n\nR\n\nRBC\n\nrefrigerate\n\nRNA\n\nRPLS\n\nRT\n\nRTS\n\nSA\n\nSC\n\nSIADH\n\nSOB\n\nSCr\n\nS/S\n\nSW or SW\n\nTEN\n\nTIA\n\nTLS\n\nTNA\n\nTPN\n\nTRALI\n\nTSH\n\nTT\n\nμL\n\nULN\n\nURI\n\nUTI\n\nVEGF\n\nVF\n\nVS\n\nVT\n\nv/v\n\nWBC\n\nWBCT\n\nw/v\n\nw/w"
+const ansStr = "Cell cycle non-specific Alkylating agents \n\n Cell cycle Specific Antimetabolites \n\nImmunotherapy and Targeted Therapy\n\n*HER-2 (Human Epidermal Growth Factor Receptor-2) and Herceptin Avastins\n\nHormone Therapy: Corticosteroids\n\n Hematopoietic Growth Factors \n\n GCFS (Neupogen) \n\n Erythropoietin(Epogen)\n\nLow Platelet Levels\n\n Palifermim/kepivance"
 const answers = ansStr.split("\n\n")
 const fauxAns = [];
-const questStr = "Arterial Blood Gases\n\nAngohuman Converting Enzyme\n\nActivated Coagulation Time\n\nAdrenocorticotropic Hormone\n\nAlbumin-to-Globulin Ratio\n\n(SGOT) Atenine Aminotransferase\n\nAcute Myocardial Interaction\n\nAbsolute Neutrophil Count\n\nAdult Respiratory Distress Syndrome\n\n(SGOT) Aspartane Aminotransferase\n\nArea Under the Curve\n\nAtrioventricular\n\nBone Mass Density\n\nBody Surface Area\n\nBlood Urea Nitrogen\n\nCalcium\n\ncoronary artery bypass graft\n\ncoronary artery disease\n\ncontinuous ambulatory peritoneal dialysis\n\ncomp blood cell count\n\nClostridium difficile - associated diarrhea\n\ncongestive heart tail\n\nChloride\n\ncentral nervous system\n\ncarbon dioxide\n\nchronic obstructive pulmonary disease\n\ncreatine-kinase\n\nCreatinine clearance\n\nchronic renal talure\n\ncontrolled room temperature 20 to 256877 FD\n\ncerebrospinal fluid\n\nculture and son\n\nCommon Terminology Criteria for Adverse Events\n\n10% dextrose in normal saine\n\n5% dextrose in water\n\n5% dextrose in Ringer solution\n\n5% dextrose in Normal Saline\n\n5% dextrose in water\n\nDiscontinued\n\ndetyheryphthalate\n\ndisseminated intravascular Coagulation\n\ndeciliter(s) (100 mL)\n\ndelicient mismatch repair\n\nDeoxyribonucleaicacid\n\nelectrocardiogram\n\nelectroencephalogram\n\nestimated glomerular filtration rate\n\nend-stage-renal-disease\n\nfollicle-stimulating hormones\n\ngastrointestinal\n\nglamour rationale\n\ngamma glutamine\n\ngrams)\n\ngrain(s)\n\ngenitourinary\n\nhemoglobin\n\nhamatocrit\n\nhepatitis C virus\n\nmercury\n\nhuman immunodeficiency virus\n\nhour\n\nheart rate\n\nhematopoietic stem cell transplant\n\nideal body weight\n\nintensive and unit\n\nimmunoglobulin A\n\nimmune globulin intravenous\n\nmicrolens, L. mm!\n\nintramuscular\n\nInternational Normalized Ratio\n\nintrapleural\n\ninternational units)\n\nintravenous\n\nintravenous immune globulin\n\npotassium\n\npotassium chloride\n\nkilograms\n\npounds\n\nlactic dehydrogenase\n\nliver function test\n\nluteinizing hormone\n\nlactated Ringer's injection or solution\n\nmolar\n\nmeter squared\n\nmonoamine oxidase\n\nmean arterial pressure\n\nmicrogram(s)\n\nmillicurie(s)\n\nmilliequivalent\n\nmagnesium\n\nmilligram(s)\n\nmyocardial infarction\n\nminute\n\nmilliliter\n\nmillimole(s)\n\ncubic millimeters\n\nmultidrug-resistant Streptococcus pneumoniae\n\nmagnetic resonance imaging\n\nmicrosatellite instability High\n\nsodium\n\nsodium chloride\n\nNational Cancer Institute, see CTCAE\n\nRanogram (millimicrogram)\n\nnormal saline (0.9%)\n\nnonsteroidal anti-inflammatory drug\n\nnon-small-cell lung cancer\n\nnormal sinus rhythm\n\nnausea and vomiting\n\nover-the-counter\n\npremature atrial contraction\n\narterial oxygen pressure\n\npatient-controlled analgesia\n\nPneumocystis jiroveci pneumonia\n\npicogram\n\nhydrogen ion concentration\n\nprogressive multifocal leukoencephalopathy \n\nby mouth orally\n\npure red cell aplasia\n\nposterior reversible encephalopathy syndrome\n\nparoxysmal supraventricular tachycardia\n\nprothrombin time\n\npartial thromboplastin time\n\npolyvinyl chloride: premature ventricular contraction\n\nRingers injection or solution\n\nred blood cell\n\ntemperature at 2 to 8 C (36 to 46 F)\n\nribonucleic acid\n\nreversible posterior leukoencephalopathy syndrome\n\nroom temperature\n\nroom-temperature stable\n\nsinoatrial\n\nsubcutaneous\n\nsyndrome of inappropriate antidiuresis hormone\n\nshortness of breath\n\nserum creatinine\n\nsigns and symptoms\n\nsterile water for Injection\n\ntoxic epidermal necrolysis\n\ntransient ischemic attacks\n\ntumor lysis syndrome\n\n3 in-1 combination of amino acids, glucose, and fat emulsion\n\n2-in-1 combination of amino acids, glucose; total parenteral nutrition\n\ntransfusion-related acute lung injury\n\nthyroid-stimulating hormone\n\nthrombin time\n\nmicroliters, mm2\n\nupper limits of normal\n\nupper respiratory infection\n\nurinary tract infection\n\nvascular endothelial growth factor\n\nventricular fibrillation\n\nvital signs\n\nventricular tachycardia\n\nvolume-to-volume ratio\n\nwhite blood cell\n\nwhole blood clotting time\n\nweight-to-volume ratio\n\nweight-to-weight ratio"
+const questStr = "What is useful in destroying cells that are in the resting or non-cycling state (Go phase) since it kills all cells in any cell phase (normal as well as malignent)\n\n Which of the following only kills cells that are in a specific phase of the cell cycle. These drugs do NOT work in the Go phase (resting phase) of the x 9cell cycle.\]=-c Vinca alkaloids work in M phase to inhibit mitosis \n\nWhat are used for the administration of one agent stimulates the endogenous release of other biologic agents in the patient’s body which sometimes leads to flu-like symptoms fatigue, mailaise, nasuea/vomiting\n\nTargeted Therapy-Targets and binds with specific cell receptors and pathways important to tumor growth is/are...\n\n Chemical messengers in the body which are used in combination with other drug regimens and can block the effect of other hormones and stop the growth of cancer cells dependent upon those hormones is known as what? \n\n What are used as support for cancer patients throughout their treatment phase to counteract effects of their cancer therapy? \n\n What treats neutropenia resulting from cancer therapy? \n\n What is used to treat the anemia that occurs either with the cancer or from the cancer treatment. \n\n What is the key indicator that would lead to the following decision tree: if <50,000/uL institute bleeding precautions; if <10,000/uL may need to hold chemotherapy?\n\n What are synthetic version of keratinocyte growth factor, stimulates cells on surface layer of mouth and intestinal tract to grow that Prevents and shortens the duration of mucositis?" 
 const questions = questStr.split("\n\n")
 
 var NumberofQuests = document.querySelector('#QNo');
 var NoQuestBtn = document.querySelector('#add-btn');
 
-NoQuestBtn.addEventListener("click", function(event){
-    event.preventDefault();
-  if(event.target.matches("button")) {
-    startBtn.classList.remove('grey-out');
-    console.log("gone");
-    var num = NumberofQuests.value;
-    num = parseInt(num);
-        console.log("No. of Q's: " + num);
-    if( num < 1 || num > 100){
-        alert("invalid-input");
-        num = 5;
-    }
-    let j = 0;
-    for (let i = 0; i < num; i++) {
-        var entry = answers[j];
-        if( entry == "-") {
-            j++;
-        }
-        questions[i] = (j + 1);
-        answers[i] = answers[j];
-        fauxAns[i] = answers[Math.floor(Math.random() * answers.length)];
-        j++;
-        console.log(questions);
-        console.log(answers);
-        
-        
-    }
-    
-}
-})
+// NoQuestBtn.addEventListener("click", function(event){
+//     event.preventDefault();
+//   if(event.target.matches("button")) {
+//     startBtn.classList.remove('grey-out');
+//     console.log("gone");
+//     var num = questions.length;
+//     num = parseInt(num);
+//         console.log("No. of Q's: " + num);
+//     if( num < 1 || num > 100){
+//         alert("invalid-input");
+//         num = 5;
+//     }
+//     let j = 0;
+//     for (let i = 0; i < num; i++) {
+//         var entry = answers[j];
+//         if( entry == "-") {
+//             j++;
+//         }
+//         questions[i] = (j + 1);
+//         answers[i] = answers[j];
+//         fauxAns[i] = answers[Math.floor(Math.random() * answers.length)];
+//         j++;
+//         console.log("question:",questions);
+//         console.log("answers:",answers);       
+//     }   
+// }
+// })
 
 function shuffle(vect) {
     for(let i = vect.length - 1; i > 0; i--){

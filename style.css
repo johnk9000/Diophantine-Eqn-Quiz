@@ -180,19 +180,19 @@ p {
 }
 
 #ans-btns {
-    font-size: 48px;
+    font-size: 24px;
 
 }
 
 #question {
     text-align: justify;
     margin-bottom: 60px;
-    font-size: 64px;
+    font-size: 32px;
     color: hsl(var(--hue), 50%, 15%)
 }
 
 #static-question {
-    font-size: 64px;
+    font-size: 32px;
     color: #666;
 }
 
@@ -201,6 +201,7 @@ p {
 
     .container {
         max-width: 96%;
+        padding: 10px;
     }
     
     .btn {
@@ -217,13 +218,13 @@ p {
 
     #question {
         text-align: justify;
-        margin-bottom: 60px;
-        font-size: 36px;
+        margin-bottom: 10px;
+        font-size: 32px;
         color: hsl(var(--hue), 50%, 15%)
     }
 
     #static-question {
-        font-size: 36px;
+        font-size: 16px;
         color: #666;
     }
 
