@@ -17,19 +17,26 @@ function Splash() {
         .catch(err => console.log(err))
     }
 
+    const handleStart = event => {
+        event.preventDefault()
+        loadQuestions()
+
+    }
+
     return (
-        //Dropdown form for quiz subject *ICEBOX
-        //Dropdown form for number of questions
-        <div className="container">
-            <MathIntro></MathIntro>
-           <form id="noQuest" style="--animation-order: 5" type="submit">
-               <h3>Number of Questions: </h3>
-            <input placeholder="1-100" id="QNo"/>
-          </form>
-        
-        <Start
-            disabled={!(subject && NoQuest)}
-            onClick={() => {}}
-        > start <Start/></div>
+ 
+            <div>
+                <MathIntro/>
+            <form id="noQuest" style="--animation-order: 5" type="submit">
+                <h3>Number of Questions: </h3>
+                <input placeholder="1-100" id="QNo"/>
+            </form>
+            
+            <Start
+                disabled={!(subject && NoQuest)}
+                onClick={handleStart}
+            > start <Start/>
+            </div>
+       
     )
 }

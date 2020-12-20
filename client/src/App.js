@@ -5,7 +5,16 @@ import Ctrl from './components/'
 
 function App() {
   return (
-    <Splash />
+    <Router>
+      <Switch>
+      <Route exact path ={"/"}>
+            <Splash />
+        </Route>
+        <Route exact path ={"/quiz/:id"}>
+            <Quiz />
+        </Route>
+    </Switch>
+    </Router>
   );
 }
 
