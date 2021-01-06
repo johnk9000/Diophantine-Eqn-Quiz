@@ -8,7 +8,9 @@ Hosted URL: : https://johnk9000.github.io/Diophantine-Eqn-Quiz/
 The game is simple enough, given an amount of time, you can try and solve up to 100 unique iterations of Pell's Equation, which is a Diophantine Equation. Each right answer will add to your timer while every wrong answer will detract from your timer. The game will go on until wither the timer has run out or you answer the number of questions that was indicated at the beginning of the game. No complex math knowledge is needed, use your intuition and have fun!
 
 <img src="https://drive.google.com/uc?id=19wRX7GJB7gZntxnUqpsk9Lx1qvnYHeND">
+
 ## Answer Key
+
 <table class="wikitable" style="text-align: center; display: inline-table;">
 <tbody><tr>
 <th><i>n</i></th>
@@ -206,8 +208,7 @@ The game is simple enough, given an amount of time, you can try and solve up to 
 </th>
 <td>17</td>
 <td>3
-</td></tr></tbody></table>
-<table class="wikitable" style="text-align: center; display: inline-table;">
+</td></tr></tbody></table> | <table class="wikitable" style="text-align: center; display: inline-table;">
 <tbody><tr>
 <th><i>n</i></th>
 <th style="min-width:5em;"><i>x</i></th>
@@ -404,8 +405,7 @@ The game is simple enough, given an amount of time, you can try and solve up to 
 </th>
 <td>–</td>
 <td>–
-</td></tr></tbody></table>
-<table class="wikitable" style="text-align: center; display: inline-table;">
+</td></tr></tbody></table> | <table class="wikitable" style="text-align: center; display: inline-table;">
 <tbody><tr>
 <th><i>n</i></th>
 <th style="min-width:5em;"><i>x</i></th>
@@ -603,10 +603,13 @@ The game is simple enough, given an amount of time, you can try and solve up to 
 <td>49</td>
 <td>5
 </td></tr></tbody></table>
+
 ## Installation Instruction
+
 App is hosted on Github Pages via a script. Future revisions will introduce a modular, encapsulated app that will need to be hosted in a Node.js environment.
 
 ## Contribution Guidelines
+
 You are more than welcome to use the code as a template for your own games, if you would like to develop more diophantine quizzes, please specify in branch title and description what order diophantine equations the user will be prompted to solve. In the future, there may be visualizations of the solutions with a fancy graph to further aid your number theory intuition.
 
 ## Coming Features
