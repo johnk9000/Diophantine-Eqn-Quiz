@@ -9,8 +9,24 @@ The game is simple enough, given an amount of time, you can try and solve up to 
 
 <img src="https://drive.google.com/uc?id=19wRX7GJB7gZntxnUqpsk9Lx1qvnYHeND">
 
-## Answer Key
+## Installation Instruction
 
+App is hosted on Github Pages via a script. Future revisions will introduce a modular, encapsulated app that will need to be hosted in a Node.js environment.
+
+## Contribution Guidelines
+
+You are more than welcome to use the code as a template for your own games, if you would like to develop more diophantine quizzes, please specify in branch title and description what order diophantine equations the user will be prompted to solve. In the future, there may be visualizations of the solutions with a fancy graph to further aid your number theory intuition.
+
+## Coming Features
+
+* Customize number of questions.
+* Customize timer or disable entirely.
+* Side-bar which reveals location of subject in slide deck for review.
+* Word concept maps for "smart" question and answer generation.
+* Drop-down item input for different subject matters (e.g. slide decks).
+
+## Answer Key
+<table>
 <table class="wikitable" style="text-align: center; display: inline-table;">
 <tbody><tr>
 <th><i>n</i></th>
@@ -602,20 +618,4 @@ The game is simple enough, given an amount of time, you can try and solve up to 
 </th>
 <td>49</td>
 <td>5
-</td></tr></tbody></table>
-
-## Installation Instruction
-
-App is hosted on Github Pages via a script. Future revisions will introduce a modular, encapsulated app that will need to be hosted in a Node.js environment.
-
-## Contribution Guidelines
-
-You are more than welcome to use the code as a template for your own games, if you would like to develop more diophantine quizzes, please specify in branch title and description what order diophantine equations the user will be prompted to solve. In the future, there may be visualizations of the solutions with a fancy graph to further aid your number theory intuition.
-
-## Coming Features
-
-* Customize number of questions.
-* Customize timer or disable entirely.
-* Side-bar which reveals location of subject in slide deck for review.
-* Word concept maps for "smart" question and answer generation.
-* Drop-down item input for different subject matters (e.g. slide decks).
+</td></tr></tbody></table></table>
